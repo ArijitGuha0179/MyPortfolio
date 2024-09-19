@@ -2,7 +2,7 @@
 
 const CONFIG = {
   github: {
-    username: 'arifszn', // Your GitHub org/user name. (This is the only required config)
+    username: 'ArijitGuha0179', // Your GitHub org/user name. (This is the only required config)
   },
   /**
    * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
@@ -13,42 +13,62 @@ const CONFIG = {
   projects: {
     github: {
       display: true, // Display GitHub projects?
-      header: 'Github Projects',
-      mode: 'automatic', // Mode can be: 'automatic' or 'manual'
+      header: 'Audits and Open Source Projects',
+      mode: 'manual', // Mode can be: 'automatic' or 'manual'
       automatic: {
-        sortBy: 'stars', // Sort projects by 'stars' or 'updated'
-        limit: 8, // How many projects to display.
+        sortBy: 'updated', // Sort projects by 'stars' or 'updated'
+        limit: 6, // How many projects to display.
         exclude: {
           forks: false, // Forked projects will not be displayed if set to true.
-          projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
+          projects: ['ArijitGuha0179/Song-Recommender','ArijitGuha0179/terminal-portfolio','ArijitGuha0179/Crypto_Transfer','ArijitGuha0179/realestate_dapp','ArijitGuha0179/crypto_exchange','ArijitGuha0179/Invsto-Recruiting-Assignment',], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
         },
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['ArijitGuha0179/JadeCTF-Writeups','ArijitGuha0179/Codehawks-Audits','ArijitGuha0179/TrailBlaze','ArijitGuha0179/PearlCTF_Challenges_Public_2024'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
       header: 'My Projects',
       // To hide the `External Projects` section, keep it empty.
-      projects: [
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
-      ],
+      "projects": [
+    {
+      "title": "Oswap",
+      "description": "Created a full-stack dockerized wargame to teach web exploitation techniques, garnering over 100 unique users in the first month. Implemented Cronjob to sync containers and covered concepts such as XXE, SQLi, RCE, shell uploads, and type juggling.",
+      "imageUrl": "https://i.postimg.cc/BnwxvDwY/thumbnail2.png",
+      "link": "https://github.com/ArijitGuha0179/OSWAP"
+    },
+    {
+      "title": "Crypto Staking App",
+      "description": "Developed a decentralized staking web-app allowing users to buy and stake ERC20 token, claim rewards with a locking period of 1 day. Implemented admin functionality for managing staking pools, updating token contracts, and tracking user investments.",
+      "imageUrl": "https://i.postimg.cc/SRq9PGJs/thumbnail.png",
+      "link": "https://staking-pearl.vercel.app/"
+    },
+    {
+      "title": "Crypto Exchange",
+      "description": "Crypto Exchange is a DEX built on Uniswap V3, enabling token swaps, liquidity management, pool deployment, and price oracle integration. It offers detailed token info, liquidity data, and a top 10 tokens list by trading volume.",
+      "imageUrl": "https://i.postimg.cc/MHKTR3ny/swap.png",
+      "link": "https://github.com/ArijitGuha0179/crypto_dex"
+    },
+    {
+      "title": "Song Recommender AI",
+      "description": "Designed a web-app using React and Flask that recommends songs based on user inputs with an accuracy of 85%. Integrated a machine learning model trained on a Kaggle dataset to recommend songs using K-means clustering and cosine similarity.",
+      "imageUrl": "https://i.postimg.cc/YS5Y677Q/archi-7.png",
+      "link": "https://github.com/ArijitGuha0179/Song-Recommender"
+    },
+    {
+      "title": "Real Estate Dapp",
+      "description": "Established a blockchain platform for secure real estate transactions using smart contracts. Implemented NFT-based ownership transfer and designed an escrow contract to ensure secure transactions between buyers and sellers.",
+      "imageUrl": "https://i.postimg.cc/cHfYTz12/thmbu.png",
+      "link": "https://github.com/ArijitGuha0179/realestate_dapp"
+    },
+    {
+      "title": "Crypto Transfer",
+      "description": "A simple decentralized application (DApp) built for transferring ETH between accounts. It leverages Next.js for the frontend, Sanity.io for the backend and store transaction details, and Solidity for the smart contract logic. The smart contract is deployed on the Sepolia test network, and the frontend is hosted on Vercel.",
+      "imageUrl": "https://i.postimg.cc/FHKymGGk/newthumb.png",
+      "link": "https://github.com/ArijitGuha0179/Crypto_Transfer"
+    }
+  ],
     },
   },
   seo: {
@@ -57,109 +77,106 @@ const CONFIG = {
     imageURL: '',
   },
   social: {
-    linkedin: 'ariful-alam',
-    twitter: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
-    researchGate: '',
-    facebook: '',
-    instagram: '',
-    reddit: '',
-    threads: '',
-    youtube: '', // example: 'pewdiepie'
-    udemy: '',
-    dribbble: '',
-    behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
-    stackoverflow: '', // example: '1/jeff-atwood'
-    skype: '',
-    telegram: '',
-    website: 'https://www.arifszn.com',
-    phone: '',
-    email: 'arifulalamszn@gmail.com',
+    linkedin: 'arijit-guha-197a5420a',
+    twitter: 'Arijit_G_2001',
+    medium: '@archi4arijit',
+    phone: '+91-9509510062',
+    email: 'archi4arijit@gmail.com',
   },
   resume: {
     fileUrl:
       'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-    'PHP',
-    'Laravel',
+    'C++',
+    'Python',
     'JavaScript',
-    'React.js',
-    'Node.js',
-    'Nest.js',
-    'MySQL',
-    'PostgreSQL',
-    'Git',
+    'Bash',
+    'Solidity',
+    'Flask',
+    'Node',
+    'React',
+    'Next',
     'Docker',
-    'PHPUnit',
-    'CSS',
-    'Antd',
-    'Tailwind',
-  ],
+    'Linux',
+    'Git',
+    'Sanity',
+    'Hardhat',
+    'Foundry',
+    'Blockchain',
+    'Cryptography',
+    'SQL',
+    'MongoDB'
+],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
+      company: 'Disecto',
+      position: 'Privacy and Security Engineer,Internship',
+      from: 'May 2023',
+      to: 'July 2023',
+      companyLink: 'https://www.linkedin.com/company/disecto/',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'Japan Third Party-JTP',
+      position: 'Software Engineer,Internship',
+      from: 'February 2024',
+      to: 'April 2024',
+      companyLink: 'https://www.linkedin.com/company/j-t-p/',
     },
+    {
+      company: 'CyberLabs',
+      position: 'Cyber Security Trainer,Full Time',
+      from: 'April 2021',
+      to: 'May 2024',
+      companyLink: 'https://cyberlabs.club/',
+    }
   ],
   certifications: [
     {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
+      name: 'Bitcoin for Developers',
+      body: 'I completed an 18-hour comprehensive course on Bitcoin technology, covering essential topics such as cryptographic algorithms, digital signatures, transaction scripting, hashing, mining, and blockchain data structures. I gained in-depth knowledge of Bitcoin nodes, wallets, and the consensus mechanisms that secure the Bitcoin network. This course has equipped me with the technical skills necessary to work with Bitcoin technology and potentially contribute to its ecosystem.',
+      year: 'June 2024',
+      link: 'https://learn.saylor.org/pluginfile.php/1/tool_certificate/issues/1721966236/4265362863AG.pdf',
     },
   ],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'Indian Institute of Technology(ISM),Dhanbad',
+      degree: 'B.Tech in Electronics and Communication Engineering',
+      from: '2020',
+      to: '2024',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'DAV Public School, Balurghat',
+      degree: '12th Grade',
+      from: '2018',
+      to: '2020',
     },
   ],
-  publications: [
-    {
-      title: 'Publication Title',
-      conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-    {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-  ],
+  // publications: [
+  //   {
+  //     title: 'Publication Title',
+  //     conferenceName: '',
+  //     journalName: 'Journal Name',
+  //     authors: 'John Doe, Jane Smith',
+  //     link: 'https://example.com',
+  //     description:
+  //       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+  //   },
+  //   {
+  //     title: 'Publication Title',
+  //     conferenceName: 'Conference Name',
+  //     journalName: '',
+  //     authors: 'John Doe, Jane Smith',
+  //     link: 'https://example.com',
+  //     description:
+  //       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+  //   },
+  // ],
   // Display articles from your medium or dev account. (Optional)
   blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
+    source: 'medium', // medium | dev
+    username: 'archi4arijit', // to hide blog section, keep it empty
     limit: 2, // How many articles to display. Max is 10.
   },
   googleAnalytics: {
@@ -235,7 +252,7 @@ const CONFIG = {
 
   // Optional Footer. Supports plain text or HTML.
   footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
+      class="text-primary" href="https://github.com/ArijitGuha0179"
       target="_blank"
       rel="noreferrer"
     >GitProfile</a> and ❤️`,
