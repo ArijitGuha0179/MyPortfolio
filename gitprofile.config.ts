@@ -42,7 +42,7 @@ const CONFIG = {
       "title": "Crypto Staking App",
       "description": "Developed a decentralized staking web-app allowing users to buy and stake ERC20 token, claim rewards with a locking period of 1 day. Implemented admin functionality for managing staking pools, updating token contracts, and tracking user investments.",
       "imageUrl": "https://i.postimg.cc/SRq9PGJs/thumbnail.png",
-      "link": "https://staking-pearl.vercel.app/"
+      "link": "https://github.com/ArijitGuha0179/staking"
     },
     {
       "title": "Crypto Exchange",
@@ -188,7 +188,7 @@ const CONFIG = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'lofi',
+    defaultTheme: 'procyon',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
@@ -240,14 +240,15 @@ const CONFIG = {
 
     // Custom theme, applied to `procyon` theme
     customTheme: {
-      primary: '#fc055b',
-      secondary: '#219aaf',
-      accent: '#e8d03a',
-      neutral: '#2A2730',
-      'base-100': '#E3E3ED',
-      '--rounded-box': '3rem',
-      '--rounded-btn': '3rem',
-    },
+      primary: '#ff6f61',       // A vibrant coral for primary elements
+      secondary: '#4ecdc4',     // A calming teal for secondary accents
+      accent: '#f0a500',        // A bright amber for highlights
+      neutral: '#121212',       // A deep black for neutral elements
+      'base-100': '#1f1f1f',    // Dark gray for the main background
+      '--rounded-box': '1.5rem',  // Slightly rounded corners for boxes
+      '--rounded-btn': '2.5rem',  // Smoothly rounded buttons
+  }
+  ,
   },
 
   // Optional Footer. Supports plain text or HTML.
