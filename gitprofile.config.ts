@@ -72,7 +72,7 @@ const CONFIG = {
     },
   },
   seo: {
-    title: 'Portfolio of Ariful Alam',
+    title: 'Portfolio of Arijit Guha',
     description: '',
     imageURL: '',
   },
